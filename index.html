@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Interactive Component</title>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <main id="ratingMain" class="mainRatingContent">
+        <div class="starImgContainer">
+          <img
+            src="Images/vecteezy_star_1189167.png"
+            alt="Star"
+            class="starImg"
+          />
+        </div>
+        <div class="textContainer">
+          <h2>How did we do?</h2>
+          <p>
+            Please let us know how we did your support request. All feedback is
+            appreciated to help us our offering.
+          </p>
+        </div>
+
+        <div class="numberButtonsContainer">
+          <button type="button" class="buttonRate">1</button>
+          <button type="button" class="buttonRate">2</button>
+          <button type="button" class="buttonRate">3</button>
+          <button type="button" class="buttonRate">4</button>
+          <button type="button" class="buttonRate">5</button>
+        </div>
+        <button id="buttonSubmit" type="submit" class="submitButton">
+          SUBMIT
+        </button>
+      </main>
+
+      <main id="mainAfterSubmit" class="mainDisplayedOnClick">
+        <div class="transactionImgContainer">
+          <img
+            src="Images/icons8-transactions-64.png"
+            alt="Transaction"
+            class="transactionImg"
+          />
+        </div>
+        <span id="spanRatingSubmited"></span>
+        <div class="textContainer">
+          <h2>Thank you</h2>
+          <p>
+            We apreciate you taking the time to give a rating. If you ever need
+            more support don't hesitate to get in touch!.
+          </p>
+        </div>
+      </main>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
